@@ -1,0 +1,131 @@
+.button {
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  border: 3px solid var(--arch-yellow);
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+}
+.button:hover {
+  transform: scale(1.05);
+}
+.button:focus {
+  outline: none;
+}
+/*text color*/
+.txt-white {
+  color: #fff;
+}
+.txt-arch-yellow {
+  color: var(--arch-yellow);
+}
+/*text-alignment*/
+.center {
+  text-align: center;
+}
+/*Display properties*/
+.no_show {
+  display: none;
+}
+.inline {
+  display: inline-block;
+}
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+
+/*backgrounds*/
+.bg-light {
+  background-color: var(--arch-white);
+  color: black;
+}
+.bg-yellow {
+  background-color: var(--arch-yellow);
+  color: #fff;
+}
+.bg-dark {
+  background-color: var(--arch-gray);
+  color: #fff;
+  /*dark backgrounds white font and vice versa*/
+}
+.bg-light-gray {
+  background-color: var(--arch-light-gray);
+}
+/*Padding*/
+.pad-2 {
+  padding: 2rem; /*16px *2*/
+}
+/*positions*/
+.absolute-center {
+  position: absolute;
+  margin: auto;
+}
+/*Margin*/
+.mar-2 {
+  margin: 2rem;
+}
+/*border*/
+.bor-bottom {
+  border-bottom: 1.5px solid black;
+}
+.bor-none {
+  border: none;
+}
+
+/*fonts*/
+.bold {
+  font-weight: bold;
+}
+
+/*Animations*/
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes halfSlideInFromRight {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
